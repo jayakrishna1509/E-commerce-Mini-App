@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet styles */
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktop styles */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Animation for toast */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive utility classes */
+@media (max-width: 640px) {
+  .container-responsive {
+    padding: 0.75rem;
+  }
+
+  .text-responsive {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .gap-responsive {
+    gap: 0.75rem;
+  }
+
+  .p-responsive {
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container-responsive {
+    padding: 1rem;
+  }
+
+  .text-responsive {
+    font-size: clamp(1.125rem, 4vw, 1.75rem);
+  }
+
+  .gap-responsive {
+    gap: 1rem;
+  }
+
+  .p-responsive {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container-responsive {
+    padding: 1.5rem;
+  }
+
+  .text-responsive {
+    font-size: 2rem;
+  }
+
+  .gap-responsive {
+    gap: 1.5rem;
+  }
+
+  .p-responsive {
+    padding: 1.5rem;
+  }
+}
+
+/* Touch-friendly spacing for mobile */
+@media (max-width: 768px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+  }
+}
+
