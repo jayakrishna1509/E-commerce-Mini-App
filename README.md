@@ -1,6 +1,6 @@
 # 📋DAY 7 FINAL TASK: 
-# E-commerce Store 🛒 or 
-# "E-Commerce Mini App" — Full React Skill Test
+## E-commerce Store 🛒 or 
+## "E-Commerce Mini App" — Full React Skill Test
 
 A full-featured E-commerce application demonstrating advanced React concepts and E-commerce Store.
 
