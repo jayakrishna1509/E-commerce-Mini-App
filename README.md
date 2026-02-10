@@ -25,7 +25,7 @@ Build a small **E-commerce Store** app that brings together:
 
 ## ✨ Features Implemented
 
-### 🔥 App Features: 
+## 🔥 App Features: 
 ✅ **1.Routing (React Router):**
 - Home page with product listing
 
@@ -40,6 +40,7 @@ Build a small **E-commerce Store** app that brings together:
 - Protected routes (checkout requires login)
 
 • Pages:
+
 o / → Home (product list)
 
 o /cart → Shopping cart
@@ -98,6 +99,7 @@ o /login → Login page (simulated auth)
 • If not logged in → redirect to /login when trying to access /checkout.
 
 ✅ **5. Theme Toggle (Context API):**
+
 • Light / Dark mode toggle.
 
 • Save preference in localStorage.
@@ -129,6 +131,7 @@ o /login → Login page (simulated auth)
 • Show fallback UI if API fetch fails.
 
 ✅ **8. Lazy Loading (Suspense):**
+
 • Lazy load some routes like /checkout or /product/:id.
 
 ✅ **9.Performance Optimization:**
@@ -206,11 +209,11 @@ src/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+## Prerequisites
 - Node.js 16+ 
 - npm or yarn
 
-### Installation
+## Installation
 
 1. **Install dependencies:**
 ```bash
@@ -300,7 +303,10 @@ By exploring this app, you'll understand:
 
 ## 📝 API Reference
 
-**Fake Store API**: https://fakestoreapi.com/
+**Fake Store API**: 
+```
+https://fakestoreapi.com/
+```
 - `GET /products` - Get all products
 - `GET /products/:id` - Get product details
 - `GET /products/categories` - Get all categories
@@ -329,7 +335,7 @@ By exploring this app, you'll understand:
 
 • Nice UI with TailwindCSS or Styled Components
 
-### You'll have practiced EVERY important production-level React skill:
+## You'll have practiced EVERY important production-level React skill:
 - State Management (Redux)
 - Routing (React Router)
 - Context Handling (Auth, Theme)
